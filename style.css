@@ -1,0 +1,112 @@
+:root {
+  --paper: #FAF7F2;
+  --paper-warm: #F4ECDF;
+  --card: #FFFFFF;
+  --ink: #181612;
+  --ink-soft: #5C544A;
+  --ink-mute: #9B9286;
+  --accent: #E85A3C;
+  --rule: rgba(24, 22, 18, 0.08);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink-soft);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", "Geist", "Inter", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 64px 24px 96px;
+}
+header {
+  margin-bottom: 40px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--rule);
+}
+.brand {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+.brand a { color: inherit; border: 0; }
+h1 {
+  font-size: 36px;
+  line-height: 1.15;
+  color: var(--ink);
+  margin: 0 0 12px;
+  letter-spacing: -0.01em;
+}
+.effective {
+  color: var(--ink-mute);
+  font-size: 14px;
+  margin: 0;
+}
+h2 {
+  color: var(--ink);
+  font-size: 22px;
+  line-height: 1.25;
+  margin: 48px 0 12px;
+  letter-spacing: -0.005em;
+}
+h3 {
+  color: var(--ink);
+  font-size: 17px;
+  margin: 28px 0 8px;
+}
+p { margin: 0 0 14px; }
+ul {
+  margin: 0 0 18px;
+  padding-left: 22px;
+}
+li { margin-bottom: 8px; }
+strong { color: var(--ink); font-weight: 600; }
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(232, 90, 60, 0.35);
+}
+a:hover { border-bottom-color: var(--accent); }
+.intro {
+  background: var(--card);
+  padding: 20px 22px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px -10px rgba(24, 22, 18, 0.08);
+  font-size: 17px;
+  color: var(--ink);
+  margin-bottom: 32px;
+}
+.callout {
+  background: var(--paper-warm);
+  border-radius: 16px;
+  padding: 20px 22px;
+  margin: 24px 0;
+}
+.callout h2 { margin-top: 0; }
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+  font-size: 15px;
+}
+footer {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid var(--rule);
+  font-size: 14px;
+  color: var(--ink-mute);
+}
+footer a { margin-right: 16px; }
+@media (max-width: 520px) {
+  main { padding: 40px 20px 72px; }
+  h1 { font-size: 28px; }
+  h2 { font-size: 20px; margin-top: 36px; }
+  .intro { font-size: 16px; }
+}
